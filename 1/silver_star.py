@@ -78,17 +78,3 @@ class MapResolver(object):
 if __name__ == "__main__":
     resolver = MapResolver()
     print resolver.get_distance(resolver.get_hq_coords())
-
-
-
-('R', 4) # E [4, 0]
-('R', 3) # S [4, -3]
-('L', 3) # E [7, -3]
-('L', 2) # N [7, -1]
-('L', 1) # W [6, -1]
-('R', 1) # N [6, 0]
-('L', 1) # W [5, 0]
-('R', 2) # N [5, 2]
-('R', 3) # E [8, 2]
-('L', 5) # N [8, 7]
-('L', 5) # W [3, 7]
