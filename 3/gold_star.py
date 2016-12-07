@@ -5,13 +5,9 @@ class GoldTrianglonator(Trianglonator):
         self.valid_count = 0
 
     def parse_block(self, block):
-        print block
         for i in xrange(3):
-            print block[0][i], block[1][i], block[2][i]
             if self.is_valid(block[0][i], block[1][i], block[2][i]):
                 self.valid_count += 1
-                print "GUUU", i
-        print "$#$#$#$#$#$#$#$#$#"
 
     def parse_input_per_block(self):
         with open(INFILE) as file_in:
